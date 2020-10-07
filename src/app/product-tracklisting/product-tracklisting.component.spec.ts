@@ -1,8 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductTracklistingComponent } from './product-tracklisting.component';
-import {Album} from '../album';
-import {ProductService} from '../product.service';
 
 describe('ProductTracklistingComponent', () => {
   let component: ProductTracklistingComponent;
@@ -24,9 +22,4 @@ describe('ProductTracklistingComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  class albumInfo {
-    param1: string;
-}
-
 });
