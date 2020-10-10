@@ -19,11 +19,11 @@ private _productsUrl = '../assets/products.json';
     <Album>response.json());
   }
 
-  getProducts()
+  getProducts() : Observable<Product[]>
   {
     return this._http.get(this._productsUrl).map((response) =>
-    response.json());
+    <Product[]>response.json());
   }
 
-  
+
 }
